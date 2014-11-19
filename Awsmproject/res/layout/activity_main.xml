@@ -118,6 +118,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="82dp"
         android:layout_marginLeft="67dp"
-        android:text="Test Button" />
+        android:text="Test Button 2" />
 
 </RelativeLayout>
