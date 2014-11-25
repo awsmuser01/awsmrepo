@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -36,82 +37,17 @@ public class MainActivity extends Activity {
             editText.setFocusable(true);
         }
     }
-
-    public void one(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "1");
-    }
-
-    public void two(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "2");
-    }
-
-    public void three(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "3");
-    }
-
-    public void four(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "4");
-    }
-
-    public void five(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "5");
-    }
-
-    public void six(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "6");
-    }
-
-    public void seven(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "7");
-    }
-
-    public void eight(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "8");
-    }
-
-    public void nine(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "9");
-    }
-
-    public void zero(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "0");
-    }
-
-    public void star(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "*");
-    }
-
-    public void hash(View view) {
-        int start = PhNumber.getSelectionStart();
-
-        PhNumber.getText().insert(start, "#");
+    
+    public void insertNumber(View view){
+    	String s = view.getTag().toString();
+    	int start = PhNumber.getSelectionStart();
+        PhNumber.getText().insert(start, s);
     }
 
     public void call(View view) {
         Intent calling = new Intent(Intent.ACTION_CALL);
         String number = PhNumber.getText().toString();
+        number=number.replace("#","%23" );
         if (number.length() != 0)                          // Check if phone number is not entered
         {
             calling.setData(Uri.parse("tel:" + number));
