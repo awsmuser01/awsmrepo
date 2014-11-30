@@ -1,10 +1,12 @@
 package com.awsm.awsmproject;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Contacts;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.util.Log;
