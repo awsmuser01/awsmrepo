@@ -70,6 +70,8 @@ public class MainActivity extends Activity implements AsyncResponse{
 
 	public void select(View v)
 	{
+        Intent i = new Intent(this,resultsActivity.class);
+        startActivity(i);
 		String query = "p";
 		new Query().getSuggestionsForSearchString(query).delegate= this;
 	}

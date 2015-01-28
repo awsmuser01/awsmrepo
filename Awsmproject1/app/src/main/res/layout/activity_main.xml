@@ -4,12 +4,14 @@
                 <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="select"
+                android:text="Results"
+
                 android:onClick="select"
-                android:layout_marginTop="3dp"
-                android:id="@+id/results"
+                    android:id="@+id/results"
                 android:layout_gravity="center_horizontal"
-                    android:elevation="5dip" />
+                    android:elevation="5dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
     
 
     <LinearLayout

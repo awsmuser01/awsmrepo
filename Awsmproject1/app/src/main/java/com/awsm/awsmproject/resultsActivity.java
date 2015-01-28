@@ -1,17 +1,32 @@
 package com.awsm.awsmproject;
-
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.widget.TextView;
 
 public class resultsActivity extends ActionBarActivity {
-
+    private RecyclerView mRecyclerView;
+    private MyAdapter mAdapter;
+    //private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+        TextView tv= (TextView)findViewById(R.id.storeName);
+
+        //Init recycler view
+        mRecyclerView = (RecyclerView)findViewById(R.id.my_recycler_view);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        String testStore[]={"Android","Apple","Microsoft","Android","Apple","Microsoft","Android","Apple","Microsoft"};
+        mAdapter= new MyAdapter(testStore,this);
+        mRecyclerView.setAdapter(mAdapter);
+
     }
 
 
