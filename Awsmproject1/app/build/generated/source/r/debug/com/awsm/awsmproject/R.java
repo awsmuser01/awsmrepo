@@ -1413,13 +1413,23 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int android=0x7f020033;
         public static final int apple=0x7f020034;
-        public static final int cosmos=0x7f020035;
-        public static final int garuda=0x7f020036;
-        public static final int ic_launcher=0x7f020037;
-        public static final int mantri=0x7f020038;
-        public static final int microsoft=0x7f020039;
-        public static final int orion=0x7f02003a;
-        public static final int phoenix=0x7f02003b;
+        public static final int back=0x7f020035;
+        public static final int call=0x7f020036;
+        public static final int cityback=0x7f020037;
+        public static final int cosmos=0x7f020038;
+        public static final int drawer=0x7f020039;
+        public static final int filter=0x7f02003a;
+        public static final int garuda=0x7f02003b;
+        public static final int ic_launcher=0x7f02003c;
+        public static final int image=0x7f02003d;
+        public static final int location_grey=0x7f02003e;
+        public static final int location_white=0x7f02003f;
+        public static final int mantri=0x7f020040;
+        public static final int microsoft=0x7f020041;
+        public static final int orion=0x7f020042;
+        public static final int phoenix=0x7f020043;
+        public static final int textback=0x7f020044;
+        public static final int textbanner=0x7f020045;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -1435,17 +1445,20 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080058;
+        public static final int action_settings=0x7f08005d;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int backspace=0x7f080041;
         public static final int beginning=0x7f080013;
+        public static final int button=0x7f08005a;
         public static final int button0=0x7f080049;
         public static final int button1=0x7f080042;
         public static final int button10=0x7f080050;
         public static final int button11=0x7f080051;
         public static final int button12=0x7f080052;
         public static final int button13=0x7f080053;
+        public static final int button14=0x7f08005b;
+        public static final int button15=0x7f08005c;
         public static final int button2=0x7f080046;
         public static final int button3=0x7f08004a;
         public static final int button4=0x7f080043;
@@ -1474,6 +1487,7 @@ containing a value of this type.
         public static final int icon=0x7f080026;
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
+        public static final int imageView=0x7f080057;
         public static final int linearLayout1=0x7f08004f;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
@@ -1485,7 +1499,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
-        public static final int ratingBar=0x7f080057;
+        public static final int ratingBar=0x7f080059;
         public static final int results=0x7f08003f;
         public static final int search_badge=0x7f080035;
         public static final int search_bar=0x7f080034;
@@ -1503,9 +1517,10 @@ containing a value of this type.
         public static final int showTitle=0x7f080011;
         public static final int split_action_bar=0x7f080007;
         public static final int storeImage=0x7f080055;
-        public static final int storeName=0x7f080056;
+        public static final int storeName=0x7f080058;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
+        public static final int textimage=0x7f080056;
         public static final int title=0x7f080027;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
@@ -1576,8 +1591,6 @@ containing a value of this type.
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f0b00e4;
-        /**  Customize your theme here. 
-         */
         public static final int AppTheme=0x7f0b0000;
         public static final int Base_TextAppearance_AppCompat=0x7f0b0001;
         public static final int Base_TextAppearance_AppCompat_Body1=0x7f0b0002;
