@@ -72,8 +72,8 @@ public class MainActivity extends Activity implements AsyncResponse{
 	{
         Intent i = new Intent(this,resultsActivity.class);
         startActivity(i);
-		String query = "p";
-		new Query().getSuggestionsForSearchString(query).delegate= this;
+		//String query = "p";
+	//	new Query().getSuggestionsForSearchString(query).delegate= this;
 	}
 
 
