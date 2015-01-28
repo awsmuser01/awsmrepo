@@ -1413,8 +1413,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int android=0x7f020033;
         public static final int apple=0x7f020034;
-        public static final int ic_launcher=0x7f020035;
-        public static final int microsoft=0x7f020036;
+        public static final int cosmos=0x7f020035;
+        public static final int garuda=0x7f020036;
+        public static final int ic_launcher=0x7f020037;
+        public static final int mantri=0x7f020038;
+        public static final int microsoft=0x7f020039;
+        public static final int orion=0x7f02003a;
+        public static final int phoenix=0x7f02003b;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;

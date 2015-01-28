@@ -23,7 +23,7 @@ public class resultsActivity extends ActionBarActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        String testStore[]={"Android","Apple","Microsoft","Android","Apple","Microsoft","Android","Apple","Microsoft"};
+        String testStore[]={"Orion","Mantri","Garuda","Cosmos","Orion","Mantri","Phoenix","Garuda","Microsoft","Android","Apple","Orion","Mantri","Garuda","Cosmos","Phoenix","Microsoft","Android","Apple"};
         mAdapter= new MyAdapter(testStore,this);
         mRecyclerView.setAdapter(mAdapter);
 
