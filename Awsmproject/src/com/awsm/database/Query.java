@@ -35,6 +35,13 @@ public class Query {
 	    void processFinish(JSONArray output);
 	}
 
+	public PostTask getAllBrandOutlets()
+	{
+		String suggestionURL = url + "getAllBrandOutlets.php";
+		PostTask postTask = new PostTask(suggestionURL, query);
+		postTask.execute();
+		return postTask;
+	}	
 	
 	public PostTask getSuggestionsForSearchString(String query)
 	{

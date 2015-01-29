@@ -73,6 +73,12 @@ public class MainActivity extends Activity implements AsyncResponse{
 		String query = "p";
 		new Query().getSuggestionsForSearchString(query).delegate= this;
 	}
+	
+	public void getAllBrandOutlets(View v)
+	{
+		new Query().getAllBrandOutlets().delegate= this;
+	}
+
 
 
 	@Override
