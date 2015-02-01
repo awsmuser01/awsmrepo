@@ -31,10 +31,22 @@ public class Query {
 		// TODO Auto-generated constructor stub
 	}
 
+	//Interface for getting response
 	public interface AsyncResponse {
 	    void processFinish(JSONArray output);
 	}
-
+	
+	/*
+	 
+	 1. BrandOutlet
+	 		getBrandOutlets(query) , listBrandOutlets()
+	 2. Suggestions
+	 		getSuggestions(query)
+	 
+	 
+	 */
+	
+	//Deprecated
 	public PostTask getAllBrandOutlets()
 	{
 		String suggestionURL = url + "getAllBrandOutlets.php";
@@ -43,6 +55,7 @@ public class Query {
 		return postTask;
 	}	
 	
+	//Deprecated
 	public PostTask getSuggestionsForSearchString(String query)
 	{
 		String suggestionURL = url + "getSuggestionsForSearchTerm.php";
@@ -51,6 +64,7 @@ public class Query {
 		return postTask;
 	}
 	
+	//Deprecated
 	public PostTask listOutletsForSearchString(String query)
 	{
 		String listOutletsURL = url + "listOutletsForSearchString.php";
@@ -60,6 +74,30 @@ public class Query {
 	}
 	
 	
+	public PostTask getBrandOutlets(String query)
+	{
+		String listOutletsURL = url + "getBrandOutlets.php";
+		PostTask postTask = new PostTask(listOutletsURL, query);
+		postTask.execute();
+		return postTask;
+	}
+	
+	public PostTask listBrandOutlets()
+	{
+		String suggestionURL = url + "listBrandOutlets.php";
+		PostTask postTask = new PostTask(suggestionURL, query);
+		postTask.execute();
+		return postTask;
+	}
+	
+	public PostTask getSuggestions(String query)
+	{
+		String suggestionURL = url + "getSuggestions.php";
+		PostTask postTask = new PostTask(suggestionURL, query);
+		postTask.execute();
+		return postTask;
+	}
+
 	
 	public class PostTask extends AsyncTask<Void, Void, JSONArray> {
 		String query;
