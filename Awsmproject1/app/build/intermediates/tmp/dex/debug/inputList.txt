@@ -1,0 +1,7 @@
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\classes\debug
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ab659324b689cb5f404aeadb8100caa8d54a17f2.jar
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\pre-dexed\debug\classes-31252d30f044b1ec8503357aa2e6b0d7c83307ee.jar
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-16a6458538990a45e8e5d48b5f894dd873f7f732.jar
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\pre-dexed\debug\classes-b8477878ee5bfe5cfcf46e51a148c841048a38e1.jar
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\pre-dexed\debug\classes-3bee9491c5f86ba89d7c18114ee9b5ac426b9409.jar
+C:\Projects\ProjectStore\working\Awsmproject1\app\build\intermediates\pre-dexed\debug\classes-085d6d285a2a216da3437c8eac5cec795482ff80.jar
